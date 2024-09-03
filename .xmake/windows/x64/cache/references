@@ -1,0 +1,9 @@
+{
+    packages = {
+        [[C:\Users\mathe\AppData\Local\.xmake\packages\m\msys2-base\2024.01.13\a77fa58bdf6d49bbbfa0c92a5cf82862]],
+        [[C:\Users\mathe\AppData\Local\.xmake\packages\m\msys2\latest\56eab49964e1485c8b5583c1a3f74495]],
+        [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77]],
+        [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5]],
+        [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3]]
+    }
+}

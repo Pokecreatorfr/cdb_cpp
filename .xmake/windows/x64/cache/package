@@ -1,0 +1,202 @@
+{
+    ffmpeg = {
+        sysincludedirs = [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\include]],
+        __enabled = true,
+        installdir = [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77]],
+        libfiles = {
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libavfilter.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libavdevice.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libavformat.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libavcodec.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libswscale.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libswresample.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libavutil.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib\libpostproc.a]]
+        },
+        links = {
+            "avfilter",
+            "avdevice",
+            "avformat",
+            "avcodec",
+            "swscale",
+            "swresample",
+            "avutil"
+        },
+        __requirestr = "ffmpeg",
+        license = "GPL-3.0",
+        shflags = "-Wl,-Bsymbolic",
+        static = true,
+        version = "7.0",
+        envs = {
+            CHERE_INVOKING = {
+                "1"
+            },
+            PATH = {
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\n\nasm\2.16.01\632ea6d333c9481b9845516b90cbee69\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\m\msys2-base\2024.01.13\a77fa58bdf6d49bbbfa0c92a5cf82862\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\m\msys2-base\2024.01.13\a77fa58bdf6d49bbbfa0c92a5cf82862\usr\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\m\msys2\latest\56eab49964e1485c8b5583c1a3f74495\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\m\msys2-base\2024.01.13\a77fa58bdf6d49bbbfa0c92a5cf82862\mingw64\bin]]
+            },
+            MSYS2_PATH_TYPE = {
+                "inherit"
+            },
+            MSYSTEM = {
+                "MINGW64"
+            }
+        },
+        syslinks = {
+            "Bcrypt",
+            "Mfplat",
+            "mfuuid",
+            "Ole32",
+            "Secur32",
+            "Strmiids",
+            "User32",
+            "ws2_32"
+        },
+        ldflags = "-Wl,-Bsymbolic",
+        linkdirs = [[C:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib]]
+    },
+    libsdl = {
+        linkorders = {
+            [1] = "mingw32",
+            [2] = "SDL2main",
+            __wrap_locked__ = true
+        },
+        __components_orderlist = {
+            "main",
+            "lib"
+        },
+        sysincludedirs = {
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\include]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\include\SDL2]]
+        },
+        __enabled = true,
+        installdir = [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5]],
+        version = "2.30.6",
+        links = {
+            "SDL2main",
+            "SDL2"
+        },
+        __requirestr = "libsdl",
+        syslinks = {
+            "mingw32",
+            "user32",
+            "gdi32",
+            "winmm",
+            "imm32",
+            "ole32",
+            "oleaut32",
+            "version",
+            "uuid",
+            "advapi32",
+            "setupapi",
+            "shell32"
+        },
+        license = "zlib",
+        static = true,
+        libfiles = {
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib\libSDL2main.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib\libSDL2.a]]
+        },
+        linkdirs = [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib]],
+        __components_deps = {
+            main = "lib"
+        },
+        components = {
+            __base = {
+                linkorders = {
+                    [1] = "mingw32",
+                    [2] = "SDL2main",
+                    __wrap_locked__ = true
+                },
+                linkdirs = {
+                    [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib]]
+                },
+                sysincludedirs = {
+                    [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\include]],
+                    [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\include\SDL2]]
+                }
+            },
+            lib = {
+                links = "SDL2",
+                syslinks = {
+                    "user32",
+                    "gdi32",
+                    "winmm",
+                    "imm32",
+                    "ole32",
+                    "oleaut32",
+                    "version",
+                    "uuid",
+                    "advapi32",
+                    "setupapi",
+                    "shell32"
+                }
+            },
+            main = {
+                links = "SDL2main",
+                syslinks = "mingw32"
+            }
+        },
+        envs = {
+            PATH = {
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\c\cmake\3.30.2\2b80cef30074424181b5e19a46ef30fc\bin]]
+            }
+        }
+    },
+    libsdl_image = {
+        linkorders = ref("libsdl", "linkorders"),
+        __enabled = true,
+        libfiles = {
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3\lib\libSDL2_image.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib\libSDL2main.a]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib\libSDL2.a]]
+        },
+        links = {
+            "SDL2_image",
+            "SDL2main",
+            "SDL2"
+        },
+        sysincludedirs = {
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3\include]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3\include\SDL2]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\include]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\include\SDL2]]
+        },
+        version = "2.8.2",
+        license = "zlib",
+        static = true,
+        __requirestr = "libsdl_image",
+        installdir = [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3]],
+        syslinks = {
+            "mingw32",
+            "user32",
+            "gdi32",
+            "winmm",
+            "imm32",
+            "ole32",
+            "oleaut32",
+            "version",
+            "uuid",
+            "advapi32",
+            "setupapi",
+            "shell32"
+        },
+        linkdirs = {
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3\lib]],
+            [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib]]
+        },
+        envs = {
+            PATH = {
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\c\cmake\3.30.2\2b80cef30074424181b5e19a46ef30fc\bin]],
+                [[C:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\bin]]
+            }
+        }
+    }
+}

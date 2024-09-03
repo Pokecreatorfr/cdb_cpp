@@ -1,0 +1,6 @@
+[ 60%]: cache compiling.release src\main.cpp
+ain.cpp:ainain.cpp:121:18: ain.cpp:3athe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\include/libavcodec/avcodec.h:2387:5:[K
+[ 80%]: linking.release Codabox_Cpp.exe
+[100%]: build ok, spent 1.907s
+warning: : target(Codabox_Cpp) maybe is not compatible with license(GPL-3.0) of package(ffmpeg), 
+you can use set_license()/set_policy() to modify/disable license!

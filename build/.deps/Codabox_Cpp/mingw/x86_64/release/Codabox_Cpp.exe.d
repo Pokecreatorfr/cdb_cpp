@@ -1,0 +1,47 @@
+{
+    values = {
+        [[C:\MinGW\bin\x86_64-w64-mingw32-g++]],
+        {
+            "-m64",
+            [[-LC:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl_image\2.8.2\042661f6b36a495db5dd9f6c97fbfcd3\lib]],
+            [[-LC:\Users\mathe\AppData\Local\.xmake\packages\l\libsdl\2.30.6\a0b5b76acc3449dab95ee806391380c5\lib]],
+            [[-LC:\Users\mathe\AppData\Local\.xmake\packages\f\ffmpeg\7.0\cf717cf245e745928a2c220fe10baa77\lib]],
+            "-s",
+            "-lSDL2_image",
+            "-lmingw32",
+            "-lSDL2main",
+            "-lSDL2",
+            "-lavfilter",
+            "-lavdevice",
+            "-lavformat",
+            "-lavcodec",
+            "-lswscale",
+            "-lswresample",
+            "-lavutil",
+            "-luser32",
+            "-lgdi32",
+            "-lwinmm",
+            "-limm32",
+            "-lole32",
+            "-loleaut32",
+            "-lversion",
+            "-luuid",
+            "-ladvapi32",
+            "-lsetupapi",
+            "-lshell32",
+            "-lBcrypt",
+            "-lMfplat",
+            "-lmfuuid",
+            "-lOle32",
+            "-lSecur32",
+            "-lStrmiids",
+            "-lUser32",
+            "-lws2_32",
+            "-Wl,-Bsymbolic"
+        }
+    },
+    files = {
+        [[build\.objs\Codabox_Cpp\mingw\x86_64\release\src\main.cpp.obj]],
+        [[build\.objs\Codabox_Cpp\mingw\x86_64\release\src\video_player.cpp.obj]]
+    }
+}

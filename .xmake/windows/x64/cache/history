@@ -1,0 +1,26 @@
+{
+    cmdlines = {
+        "xmake check",
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\explorer.lua]],
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\update_intellisense.lua .vscode clangd]],
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\explorer.lua]],
+        "xmake check",
+        "xmake ",
+        "xmake check",
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\explorer.lua]],
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\config.lua]],
+        "xmake ",
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\default_target.lua]],
+        "xmake run Codabox_Cpp",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        "xmake ",
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\explorer.lua]],
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\config.lua]],
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\explorer.lua]],
+        [[xmake l c:\Users\mathe\.vscode\extensions\tboox.xmake-vscode-2.3.7\assets\config.lua]]
+    }
+}

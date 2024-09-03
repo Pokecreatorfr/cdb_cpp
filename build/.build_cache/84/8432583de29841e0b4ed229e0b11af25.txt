@@ -1,0 +1,17 @@
+{
+    errdata = "\27[01m\27[Ksrc\\main.cpp:\27[m\27[K In function '\27[01m\27[Kint\27[01;32m\27[K SDL_main\27[m\27[K(int, char**)\27[m\27[K':\
+\27[01m\27[Ksrc\\main.cpp:166:18:\27[m\27[K \27[01;35m\27[Kwarning: \27[m\27[K'\27[01m\27[Kint\27[01;32m\27[K avcodec_close\27[m\27[K(AVCodecContext*)\27[m\27[K' is deprecated [\27[01;35m\27[K-Wdeprecated-declarations\27[m\27[K]\
+  166 |     \27[01;35m\27[Kavcodec_close(videoCodecContext)\27[m\27[K;\
+      |     \27[01;35m\27[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\27[m\27[K\
+In file included from \27[01m\27[Ksrc\\main.cpp:3\27[m\27[K:\
+\27[01m\27[KC:\\Users\\mathe\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\7.0\\cf717cf245e745928a2c220fe10baa77\\include/libavcodec/avcodec.h:2387:5:\27[m\27[K \27[01;36m\27[Knote: \27[m\27[Kdeclared here\
+ 2387 | int \27[01;36m\27[Kavcodec_close\27[m\27[K(AVCodecContext *avctx);\
+      |     \27[01;36m\27[K^~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc\\main.cpp:167:18:\27[m\27[K \27[01;35m\27[Kwarning: \27[m\27[K'\27[01m\27[Kint\27[01;32m\27[K avcodec_close\27[m\27[K(AVCodecContext*)\27[m\27[K' is deprecated [\27[01;35m\27[K-Wdeprecated-declarations\27[m\27[K]\
+  167 |     \27[01;35m\27[Kavcodec_close(audioCodecContext)\27[m\27[K;\
+      |     \27[01;35m\27[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[KC:\\Users\\mathe\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\7.0\\cf717cf245e745928a2c220fe10baa77\\include/libavcodec/avcodec.h:2387:5:\27[m\27[K \27[01;36m\27[Knote: \27[m\27[Kdeclared here\
+ 2387 | int \27[01;36m\27[Kavcodec_close\27[m\27[K(AVCodecContext *avctx);\
+      |     \27[01;36m\27[K^~~~~~~~~~~~~\27[m\27[K\
+"
+}

@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/**",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/***",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/****",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/*****",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/******",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/*******",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/l/libsdl_image/2.8.2/042661f6b36a495db5dd9f6c97fbfcd3/include",
+                "C:/Users/mathe/AppData/Local/.xmake/packages/f/ffmpeg/7.0/70f7b24c83de4dd3b33eab6d17db499e/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
