@@ -19,13 +19,21 @@ int main(int argc, char* argv[]) {
 
     SDL_Window* window = SDL_CreateWindow("Exemple Video Player Software CPP",
         SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-        1280, 720, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
+        1280, 720, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
     if (!window) {
         std::cerr << "Could not create SDL window - " << SDL_GetError() << std::endl;
         return -1;
     }
 
-    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE);
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+
+    SDL_RendererInfo info;
+    SDL_GetRendererInfo(renderer, &info);
+
+    const char* driver = info.name;
+
+    std::cout << "Using driver: " << driver << std::endl;
+
 
     VideoDecoder videoDecoder(filepath, renderer);
 
@@ -47,13 +55,23 @@ int main(int argc, char* argv[]) {
     // create timer
     clock_t timer;
     timer = clock();
+    int frameCount = 0;
 
     // Boucle de décodage et d'affichage
     while (true) {
-        if(clock() - timer >= 1000/frameRate.num){
-            timer = clock();
-            videoDecoder.decodeFrame();
+
+        clock_t currentTime = clock();
+        float elapsedTime = float(currentTime - timer) / CLOCKS_PER_SEC;
+        if (elapsedTime > 1.0f) {
+            float fps = frameCount / elapsedTime;
+            std::cout << "FPS: " << fps << std::endl;
+
+            // Réinitialisation du compteur
+            frameCount = 0;
+            timer = currentTime;
         }
+        videoDecoder.decodeFrame();
+
 
 
         int screenWidth, screenHeight;
@@ -73,6 +91,7 @@ int main(int argc, char* argv[]) {
 
 
         SDL_RenderPresent(renderer);
+        frameCount++;
 
         SDL_Event event;
         SDL_PollEvent(&event);
